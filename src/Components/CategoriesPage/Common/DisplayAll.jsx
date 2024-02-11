@@ -13,7 +13,7 @@ function DisplayAll(props) {
             className="relative w-[30%] flex flex-col overflow-hidden rounded-lg border"
             key={index}
           >
-            <Link to={"/product/" + ele.asin} className="aspect-square overflow-hidden p-2">
+            <Link to={"/singleProduct/" + ele.asin} className="aspect-square overflow-hidden p-2">
               <img
                 className="h-full w-full object-cover transition-all duration-300 group-hover:scale-125"
                 src={ele.image}
@@ -33,7 +33,7 @@ function DisplayAll(props) {
                   {ele.original_price}{" "}
                 </del>
               </div>
-              <Link to={"/product/" + ele.asin} className="mb-2 text-sm text-gray-400">{shortTitle}</Link>
+              <Link to={"/singleProduct/" + ele.asin} className="mb-2 text-sm text-gray-400">{shortTitle}</Link>
             </div>
             <button className="group mx-auto mb-2 flex h-10 w-10/12 items-stretch overflow-hidden rounded-md text-gray-600">
               <div className="flex w-full items-center justify-center bg-gray-100 text-xs uppercase transition group-hover:bg-emerald-600 group-hover:text-white">
